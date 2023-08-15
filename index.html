@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
   <title>
     A-Star Solutions
   </title>
@@ -14,6 +15,10 @@
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
   <style>
+
+
+
+
     .gradient {
       background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     }
@@ -41,6 +46,7 @@
       right: 0.75rem;
       transform: translateY(-50%);
     }
+
   </style>
 </head>
 
@@ -78,6 +84,10 @@
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold hover:underline"
               href="#processes">Our Processes</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold hover:underline"
+              href="#portfolio">Portfolio</a>
           </li>
         </ul>
         <button id="navAction"
@@ -398,9 +408,6 @@
 
 
 
-
-
-
   <section class=" bg-white py-8 " id="processes">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-black mt-8">
@@ -509,25 +516,73 @@
   </svg>
 
 
-
-
-  <section class="container mx-auto text-center py-6 mb-12">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-      Power Up with A-Star Solution!
+  <section class="px-4 py-8" id="portfolio">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white mb-8">
+      Portfolio
     </h2>
-    <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 justify-center ml-24">
+        <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="hh">
+            <img class="w-1200px h-50px object-cover" src="images/vincoapp.jpeg" alt="Image">
+          </div>
+            <div class="p-4">
+                <h2 class="text-xl font-semibold text-gray-800">Vinco App</h2>
+                <div class="mt-4">
+                    <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        Visit Site
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="card-image">
+            <img class="w-full h-96 object-cover" src="images/daardoor-web1.jpeg" alt="Image">
+          </div>
+            <div class="p-4">
+                <h2 class="text-xl font-semibold text-gray-800">DaarDoar Web App</h2>
+                <div class="mt-4">
+                    <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        Visit Site
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <h3 class="my-4 text-2xl leading-tight">
-      Join forces with A-Star Solutions and allow us to propel your company to unprecedented success. Our team is
-      excited to work with you and make your ideas a reality. Contact us today to discuss your IT requirements and
-      discover how we can help your company reach new heights.
-    </h3>
-    <button
-      class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-      Get Started
-    </button>
-  </section>
+   
+
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 justify-center mt-8 ml-24">
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="w-full h-96 object-cover" src="images/vinco-webapp1.jpeg" alt="Image">
+
+          <div class="p-4">
+              <h2 class="text-xl font-semibold text-gray-800">Vinco Web App</h2>
+              <div class="mt-4">
+                  <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                      Visit Site
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="w-400px  object-cover" src="images/vinco-mobapp-444.jpeg" alt="Image">
+          <div class="p-4">
+              <h2 class="text-xl font-semibold text-gray-800">Vinco Mobile App</h2>
+              <div class="mt-4">
+                  <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                      Visit Site
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+ 
 
 
 
@@ -591,11 +646,7 @@
   </section>
 
 
-
-
-
-
-
+  
 
   <!--Footer-->
   <footer class="bg-gradient p-4">
@@ -619,9 +670,6 @@
   <script>
     document.getElementById("contactForm").addEventListener("submit", async function (event) {
       event.preventDefault(); // Prevent the form from actually submitting
-
-
-
       // Submit the form data to Formspree
       try {
         const response = await fetch(this.action, {
@@ -651,10 +699,6 @@
     });
   </script>
 
-
-
-
-
   <script>
     function handleSubmit(event) {
       event.preventDefault(); // Prevent the default form submission
@@ -671,7 +715,6 @@
       form.reset();
     }
   </script>
-
 
 
 
@@ -759,6 +802,7 @@
       return false;
     }
   </script>
+
 </body>
 
 </html>
