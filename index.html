@@ -17,9 +17,6 @@
   <style>
 
 
-
-
-
     .gradient {
       background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     }
@@ -38,15 +35,11 @@
       width: 100%;
       border-radius: 0.25rem;
     }
-
- 
-
-
-
   </style>
 </head>
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+  
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -85,14 +78,26 @@
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold hover:underline"
               href="#portfolio">Portfolio</a>
           </li>
+       
         </ul>
         <button id="navAction"
           class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <a href="#contact">Request a Quote</a>
         </button>
+          <select id="languageSelector" class="inline-block border rounded-full px-2 py-1 text-black ml-4">
+            <option value="en">English</option>
+            <option value="fr">Swedish</option>
+            <option value="es">Spanish</option>
+        </select>
+        
       </div>
+
+   
+    
     </div>
+
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+
   </nav>
 
 
@@ -101,10 +106,10 @@
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
       <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-        <h1 class="my-4 text-5xl font-bold leading-tight">
+        <h1 id="pageTitle" class="my-4 text-5xl font-bold leading-tight">
           Welcome to A-Star Solutions
         </h1>
-        <p class="leading-normal text-2xl mb-8">
+        <p id="pageDescription" class="leading-normal text-2xl mb-8">
           Your premier IT partner in Sweden, empowering businesses with exceptional IT solutions. With a strong emphasis
           on web development and app development, we have earned a reputation for excellence in delivering innovative
           and tailored solutions that drive growth and success.
@@ -511,7 +516,6 @@
     </g>
   </svg>
 
-
   <section class="px-4 py-8" id="portfolio">
     <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white mb-8">
         Portfolio
@@ -719,7 +723,9 @@
 
 
 
+
   <script>
+
     var scrollpos = window.scrollY;
     var header = document.getElementById("header");
     var navcontent = document.getElementById("nav-content");
@@ -802,6 +808,43 @@
       return false;
     }
   </script>
+
+<script>
+  // Translation object
+  var translations = {
+      en: {
+          pageTitle: "Welcome to A-Star Solutions",
+          pageDescription: "Your premier IT partner in Sweden, empowering businesses with exceptional IT solutions. With a strong emphasis on web development and app development, we have earned a reputation for excellence in delivering innovative and tailored solutions that drive growth and success."
+      },
+      fr: {
+          pageTitle: "Bienvenue chez A-Star Solutions",
+          pageDescription: "Votre principal partenaire informatique en Suède, offrant des solutions informatiques exceptionnelles aux entreprises. Avec un fort accent sur le développement web et le développement d'applications, nous avons acquis une réputation d'excellence en fournissant des solutions innovantes et personnalisées qui stimulent la croissance et le succès."
+      },
+      es: {
+          pageTitle: "Bienvenido a A-Star Solutions",
+          pageDescription: "Su principal socio de TI en Suecia, potenciando las empresas con soluciones de TI excepcionales. Con un fuerte énfasis en el desarrollo web y el desarrollo de aplicaciones, hemos ganado una reputación de excelencia al ofrecer soluciones innovadoras y adaptadas que impulsan el crecimiento y el éxito."
+      }
+  };
+
+  // Function to update content based on selected language
+  function updateContent(language) {
+      document.getElementById("pageTitle").textContent = translations[language].pageTitle;
+      document.getElementById("pageDescription").textContent = translations[language].pageDescription;
+  }
+
+  // Set the default language
+  var defaultLanguage = "en";
+  updateContent(defaultLanguage);
+
+  // Handle language selector change
+  var languageSelector = document.getElementById("languageSelector");
+  languageSelector.addEventListener("change", function() {
+      var selectedLanguage = languageSelector.value;
+      updateContent(selectedLanguage);
+  });
+</script>
+
+
 
 </body>
 
