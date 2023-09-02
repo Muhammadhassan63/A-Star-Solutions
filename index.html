@@ -9,14 +9,12 @@
   <title>
     A-Star Solutions
   </title>
-  <meta name="description" content="Simple landind page" />
+  <meta name="description" content="software development" />
   <meta name="keywords" content="A-Star Solutions, Web Development" />
   <meta name="author" content="" />
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
   <style>
-
-
     .gradient {
       background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     }
@@ -39,7 +37,7 @@
 </head>
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-  
+
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container flex flex-wrap items-center mx-auto justify-between mt-0 py-2">
@@ -63,7 +61,7 @@
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4  font-bold hover:underline"
-              href="#">Home</a>
+              href="/">Home</a>
           </li>
 
           <li class="mr-3">
@@ -78,22 +76,18 @@
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-bold hover:underline"
               href="#portfolio">Portfolio</a>
           </li>
-       
+
         </ul>
         <button id="navAction"
           class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 px-2 py-2 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <a href="#contact">Request a Quote</a>
         </button>
-          <select id="languageSelector" class="inline-block border rounded-full px-2 py-1 text-black ml-4">
-            <option value="en">English</option>
-            <option value="fr">Swedish</option>
-            <option value="es">Spanish</option>
+        <select id="languageSelector" class="inline-block border rounded-full px-2 py-1 text-black ml-4">
+          <option value="en">English</option>
+          <option value="sv">Swedish</option>
+          <option value="es">Spanish</option>
         </select>
-        
       </div>
-
-   
-    
     </div>
 
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -145,9 +139,12 @@
       </g>
     </svg>
   </div>
+
+
+
   <section class="bg-white border-b py-8" id="solutions">
     <div class="container max-w-5xl mx-auto m-8">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mt-4">
+      <h2 id="heading1" class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mt-4">
         Our Comprehensive IT Solutions
       </h2>
       <div class="w-full mb-4">
@@ -155,10 +152,10 @@
       </div>
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
-          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <h3 id="subheading1" class="text-3xl text-gray-800 font-bold leading-none mb-3">
             Web Development
           </h3>
-          <p class="text-gray-600 mb-8">
+          <p id="web_text" class="text-gray-600 mb-8">
             Our talented team of web developers creates stunning websites that leave a lasting impression on your
             audience. From responsive designs to seamless user experiences, we ensure that your website represents your
             brand with elegance and functionality.
@@ -177,10 +174,10 @@
 
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            <h3 id="subheading2" class="text-3xl text-gray-800 font-bold leading-none mb-3">
               App Development
             </h3>
-            <p class="text-gray-600 mb-8">
+            <p id="app_text" class="text-gray-600 mb-8">
               We have extensive experience creating cutting-edge mobile applications that are appealing to your target
               audience. Whether it's a simple consumer app or a complex enterprise solution, we use cutting-edge
               technology to provide the best possible experience.
@@ -201,10 +198,10 @@
     <div class="container max-w-5xl mx-auto m-8">
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
-          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <h3 id="subheading3" class="text-3xl text-gray-800 font-bold leading-none mb-3">
             E-commerce Solutions
           </h3>
-          <p class="text-gray-600 mb-8">
+          <p id="commerce_text" class="text-gray-600 mb-8">
             We understand the nuances of e-commerce and can create robust online stores that attract customers and
             increase sales. Our customized e-commerce solutions include secure payment gateways, inventory management
             systems, and an easy-to-use interface.
@@ -341,10 +338,10 @@
 
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            <h3 id="subheading4" class="text-3xl text-gray-800 font-bold leading-none mb-3">
               Custom Software Development
             </h3>
-            <p class="text-gray-600 mb-8">
+            <p id="dev_text" class="text-gray-600 mb-8">
               Do you need a one-of-a-kind software solution to streamline your business processes? We can develop custom
               software applications to meet your specific needs, resulting in increased efficiency and productivity.
               <br />
@@ -358,25 +355,21 @@
 
 
 
-
-
-
-
-  <section class=" border-b py-8">
+  <section class="border-b py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white ">
-        Why Choose A-Star Solutions:
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        <span id="choose_title">Why Choose A-Star Solutions:</span>
       </h2>
       <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
           <a href="#" class="flex flex-wrap no-underline hover:no-underline">
             <div class="w-full font-bold text-xl text-gray-800">
-              Professional Excellence:
+              <span id="excellence_title">Professional Excellence:</span>
             </div>
             <p class="text-gray-800 text-base mt-4">
-              Our dedicated team of developers and designers is committed to delivering excellence in every project we
-              undertake. We take pride in staying current with industry trends and best practices in order to provide
-              cutting-edge solutions.
+              <span id="excellence_text">Our dedicated team of developers and designers is committed to delivering
+                excellence in every project we undertake. We take pride in staying current with industry trends and best
+                practices in order to provide cutting-edge solutions.</span>
             </p>
           </a>
         </div>
@@ -385,11 +378,11 @@
       <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
           <div class="w-full font-bold text-xl text-gray-800">
-            Creativity and innovation are in our DNA at A-Star Solutions
+            <span id="innovation_title">Creativity and innovation are in our DNA at A-Star Solutions</span>
           </div>
           <p class="text-gray-800 text-base mt-4">
-            We approach each project with a fresh perspective, constantly looking for new ways to solve complex problems
-            and deliver unrivaled results.
+            <span id="innovation_text">We approach each project with a fresh perspective, constantly looking for new
+              ways to solve complex problems and deliver unrivaled results.</span>
           </p>
         </div>
       </div>
@@ -397,21 +390,24 @@
       <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
           <div class="w-full font-bold text-xl text-gray-800">
-            Client-Centered Approach
+            <span id="client_approach_title">Client-Centered Approach</span>
           </div>
           <p class="text-gray-800 text-base mt-4">
-            Your satisfaction is our top priority. We take the time to understand your goals, challenges, and vision in
-            order to develop solutions that are specifically tailored to your needs. Your success is our success.
+            <span id="client_approach_text">Your satisfaction is our top priority. We take the time to understand your
+              goals, challenges, and vision in order to develop solutions that are specifically tailored to your needs.
+              Your success is our success.</span>
           </p>
         </div>
       </div>
+    </div>
   </section>
+
 
 
 
   <section class=" bg-white py-8 " id="processes">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-black mt-8">
+      <h2 id="Processes_heading" class="w-full my-2 text-5xl font-bold leading-tight text-center text-black mt-8">
         Our Client-Centered Process:
       </h2>
       <div class="w-full mb-4">
@@ -421,10 +417,10 @@
       <!-- Consultation -->
       <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
-          <div class="w-full font-bold text-xl text-gray-800">
+          <div id="consultation" class="w-full font-bold text-xl text-gray-800">
             Consultation:
           </div>
-          <p class="text-gray-800 text-base mt-4">
+          <p id="consultation_text" class="text-gray-800 text-base mt-4">
             We begin by having detailed discussions with you to understand the nuances of your project. We take into
             account your company's goals, target audience, and desired outcomes.
           </p>
@@ -434,10 +430,10 @@
       <!-- Design and Development -->
       <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
-          <div class="w-full font-bold text-xl text-gray-800">
+          <div id="design" class="w-full font-bold text-xl text-gray-800">
             Design and Development:
           </div>
-          <p class="text-gray-800 text-base mt-4">
+          <p id="design_text" class="text-gray-800 text-base mt-4">
             Our designers create visually appealing designs, while our developers bring them to life with precision and
             efficiency.
           </p>
@@ -447,10 +443,10 @@
       <!-- Thorough Testing -->
       <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
-          <div class="w-full font-bold text-xl text-gray-800">
+          <div id="testing" class="w-full font-bold text-xl text-gray-800">
             Thorough Testing:
           </div>
-          <p class="text-gray-800 text-base mt-4">
+          <p id="testing_text" class="text-gray-800 text-base mt-4">
             Prior to final delivery, we conduct extensive testing to ensure that the solutions meet the highest quality
             standards and function flawlessly.
           </p>
@@ -460,10 +456,10 @@
       <!-- On-Time Delivery -->
       <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
-          <div class="w-full font-bold text-xl text-gray-800">
+          <div id="delivery" class="w-full font-bold text-xl text-gray-800">
             On-Time Delivery:
           </div>
-          <p class="text-gray-800 text-base mt-4">
+          <p id="delivery_text" class="text-gray-800 text-base mt-4">
             We understand the value of time in business, and our project management ensures that we meet deadlines
             without sacrificing quality.
           </p>
@@ -473,10 +469,10 @@
       <!-- Ongoing Support -->
       <div class="w-full p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow h-96 p-4">
-          <div class="w-full font-bold text-xl text-gray-800">
+          <div id="support" class="w-full font-bold text-xl text-gray-800">
             Ongoing Support:
           </div>
-          <p class="text-gray-800 text-base mt-4">
+          <p id="support_text" class="text-gray-800 text-base mt-4">
             Our relationship does not end with the completion of the project. We provide ongoing support to address any
             concerns and ensure peak performance.
           </p>
@@ -517,76 +513,73 @@
   </svg>
 
   <section class="px-4 py-8" id="portfolio">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white mb-8">
-        Portfolio
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white mb-8" id="portfolio_title">
+      Portfolio
     </h2>
-    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-4  md:justify-evenly sm-justify-center">
-        <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="hh">
-                <img class="w-1200px h-50px object-cover" src="images/vincoapp.jpeg" alt="Image">
-            </div>
-            <div class="p-4">
-                <h2 class="text-xl font-semibold text-gray-800">Vinco App</h2>
-                <div class="mt-4">
-                    <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Visit Site
-                    </a>
-                </div>
-            </div>
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-4 md:justify-evenly sm-justify-center">
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+        <div class="hh">
+          <img class="w-1200px h-50px object-cover" src="images/vincoapp.jpeg" alt="Image">
         </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold text-gray-800" id="portfolio_item1_title">Vinco App</h2>
+          <div class="mt-4">
+            <a href="#"
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <span id="portfolio_item1_link">Visit Site</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
-        <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="card-image">
-                <img class="w-full h-96 object-cover" src="images/daardoor-web1.jpeg" alt="Image">
-            </div>
-            <div class="p-4">
-                <h2 class="text-xl font-semibold text-gray-800">DaarDoar Web App</h2>
-                <div class="mt-4">
-                    <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Visit Site
-                    </a>
-                </div>
-            </div>
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+        <div class="card-image">
+          <img class="w-full h-96 object-cover" src="images/daardoor-web1.jpeg" alt="Image">
         </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold text-gray-800 mt-16" id="portfolio_item2_title">DaarDoor Web App</h2>
+          <div class="mt-4">
+            <a href="#"
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <span id="portfolio_item2_link">Visit Site</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-4 justify-center md:justify-evenly mt-8">
-        <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="card-image">
-                <img class="w-full h-96 object-cover" src="images/vinco-webapp1.jpeg" alt="Image">
-            </div>
-            <div class="p-4">
-                <h2 class="text-xl font-semibold text-gray-800">Vinco Web App</h2>
-                <div class="mt-4">
-                    <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Visit Site
-                    </a>
-                </div>
-            </div>
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+        <div class="card-image">
+          <img class="w-full h-96 object-cover" src="images/vinco-webapp1.jpeg" alt="Image">
         </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold text-gray-800" id="portfolio_item3_title">Vinco Web App</h2>
+          <div class="mt-4">
+            <a href="#"
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <span id="portfolio_item3_link">Visit Site</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
-        <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="card-image">
-                <img class="w-400px object-cover" src="images/vinco-mobapp-444.jpeg" alt="Image">
-            </div>
-            <div class="p-4">
-                <h2 class="text-xl font-semibold text-gray-800">Vinco Mobile App</h2>
-                <div class="mt-4">
-                    <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        Visit Site
-                    </a>
-                </div>
-            </div>
+      <div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden">
+        <div class="card-image">
+          <img class="w-400px object-cover" src="images/vinco-mobapp-444.jpeg" alt="Image">
         </div>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold text-gray-800" id="portfolio_item4_title">Vinco Mobile App</h2>
+          <div class="mt-4">
+            <a href="#"
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <span id="portfolio_item4_link">Visit Site</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
-
-
-
-
-
- 
+  </section>
 
 
 
@@ -595,53 +588,59 @@
 
       <!-- Left side: Contact Us -->
       <div class="w-full md:w-1/2 bg-white p-8">
-        <h2 class="text-2xl font-semibold mb-4 text-black">Contact Us</h2>
+        <h2 class="text-2xl font-semibold mb-4 text-black" id="contact_title">Contact Us</h2>
         <form action="https://formspree.io/f/xdoregga" method="POST" id="contactForm">
           <div class="mb-4">
-            <label for="name" class="block text-gray-700">Your Name</label>
+            <label for="name" class="block text-gray-700" id="label_name">Your Name</label>
             <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded text-black" required>
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-gray-700">Your Email</label>
+            <label for="email" class="block text-gray-700" id="label_email">Your Email</label>
             <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded text-black">
           </div>
           <div class="mb-4">
-            <label for="organization" class="block text-gray-700">Your Organization</label>
+            <label for="organization" class="block text-gray-700" id="label_organization">Your Organization</label>
             <input type="text" id="organization" name="organization" class="mt-1 p-2 w-full border rounded text-black"
               required>
           </div>
           <div class="mb-4">
-            <label for="service" class="block text-gray-700 text-black">Select the Service Needed</label>
-            <select id="service" name="service" class="mt-1 p-2 w-full border rounded text-black" required>
-              <option name="subject" value="others" class=" text-gray-700 text-black">Software Development</option>
-
-              <option name="subject" value="web-development" class=" text-gray-700 text-black">Web Development</option>
-              <option name="subject" value="mobile-development" class=" text-gray-700 text-black">Mobile Development
+            <label for="service" class="block text-gray-700 text-black" id="label_service">Select the Service
+              Needed</label>
+            <select name="service" class="mt-1 p-2 w-full border rounded text-black" required>
+              <option value="others" class="text-gray-700 text-black" id="option_software">Software Development</option>
+              <option value="web-development" class="text-gray-700 text-black" id="option_web">Web Development</option>
+              <option value="mobile-development" class="text-gray-700 text-black" id="option_mobile">Mobile Development
               </option>
-              <optionn ame="subject" value="software-development" class=" text-gray-700 text-black">Software Development
-              </optionn>
-              <option name="subject" value="others" class=" text-gray-700 text-black">Software Development</option>
+              <option value="software-development" class="text-gray-700 text-black" id="option_other">Other</option>
             </select>
           </div>
           <div class="mb-4">
-            <label for="message" class="block text-gray-700">Message</label>
+            <label for="message" class="block text-gray-700" id="label_message">Message</label>
             <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded text-gray-700"
               required></textarea>
           </div>
-          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="submit_button">
+            <span id="submit_text">Submit</span>
+          </button>
         </form>
       </div>
 
+
+
       <!-- Right side: What Happens Next -->
       <div class="w-full md:w-1/2 bg-white p-8 md:pt-24 text-black">
-        <h2 class="text-2xl font-semibold mb-4">What Happens Next</h2>
+        <h2 class="text-2xl font-semibold mb-4" id="contact_heading">What Happens Next</h2>
         <ol class="list-decimal pl-4">
-          <li class="mb-8 text-lg">Our business development team contacts you within two working days.</li>
-          <li class="mb-8 text-lg">A discovery session is held to understand your project requirements.</li>
-          <li class="mb-8 text-lg">All the information shared is protected.</li>
-          <li class="mb-8 text-lg">Our technical and business development teams analyze the scope of your project and
+          <li class="mb-8 text-lg" id="contact_text1">Our business development team contacts you within two working
+            days.</li>
+          <li class="mb-8 text-lg" id="contact_text2">A discovery session is held to understand your project
+            requirements.</li>
+          <li class="mb-8 text-lg" id="contact_text3">All the information shared is protected.</li>
+          <li class="mb-8 text-lg" id="contact_text4">Our technical and business development teams analyze the scope of
+            your project and
             share the best way forward in a proposal.</li>
-          <li class="text-lg">A software development agreement is signed based on mutually agreed terms of the proposal.
+          <li class="text-lg" id="contact_text5">A software development agreement is signed based on mutually agreed
+            terms of the proposal.
           </li>
         </ol>
       </div>
@@ -650,27 +649,27 @@
   </section>
 
 
-  
 
-  <!--Footer-->
+
+  <!-- Footer -->
   <footer class="bg-gradient p-4">
     <div class="container mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-white text-center md:text-left justify-center">
-          <p class=" text-center text-linear-gradient(90deg, #d53369 0%, #daae51 100%) no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          <p class="text-center text-linear-gradient(90deg, #d53369 0%, #daae51 100%) no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#">
-            A-Star Solutions
+            <span id="footer_title">A-Star Solutions</span>
           </p>
         </div>
       </div>
     </div>
-    <p class="text-center text-white-500 mt-4">© 2023 A-Star Solutions. All rights reserved.</p>
-    <p class="text-white-500 block text-center ">Address: Sweden</p>
+    <p class="text-center text-white-500 mt-4" id="footer_copyright">© 2023 A-Star Solutions. All rights reserved.</p>
+    <p class="text-white-500 block text-center " id="footer_address">Address: Sweden</p>
   </footer>
 
-  <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
+
+
+
   <script>
     document.getElementById("contactForm").addEventListener("submit", async function (event) {
       event.preventDefault(); // Prevent the form from actually submitting
@@ -770,10 +769,6 @@
     });
   </script>
   <script>
-    /*Toggle dropdown list*/
-    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-
 
     var navMenuDiv = document.getElementById("nav-content");
     var navMenu = document.getElementById("nav-toggle");
@@ -809,41 +804,16 @@
     }
   </script>
 
-<script>
-  // Translation object
-  var translations = {
-      en: {
-          pageTitle: "Welcome to A-Star Solutions",
-          pageDescription: "Your premier IT partner in Sweden, empowering businesses with exceptional IT solutions. With a strong emphasis on web development and app development, we have earned a reputation for excellence in delivering innovative and tailored solutions that drive growth and success."
-      },
-      fr: {
-          pageTitle: "Bienvenue chez A-Star Solutions",
-          pageDescription: "Votre principal partenaire informatique en Suède, offrant des solutions informatiques exceptionnelles aux entreprises. Avec un fort accent sur le développement web et le développement d'applications, nous avons acquis une réputation d'excellence en fournissant des solutions innovantes et personnalisées qui stimulent la croissance et le succès."
-      },
-      es: {
-          pageTitle: "Bienvenido a A-Star Solutions",
-          pageDescription: "Su principal socio de TI en Suecia, potenciando las empresas con soluciones de TI excepcionales. Con un fuerte énfasis en el desarrollo web y el desarrollo de aplicaciones, hemos ganado una reputación de excelencia al ofrecer soluciones innovadoras y adaptadas que impulsan el crecimiento y el éxito."
-      }
-  };
 
-  // Function to update content based on selected language
-  function updateContent(language) {
-      document.getElementById("pageTitle").textContent = translations[language].pageTitle;
-      document.getElementById("pageDescription").textContent = translations[language].pageDescription;
-  }
-
-  // Set the default language
-  var defaultLanguage = "en";
-  updateContent(defaultLanguage);
-
-  // Handle language selector change
-  var languageSelector = document.getElementById("languageSelector");
-  languageSelector.addEventListener("change", function() {
-      var selectedLanguage = languageSelector.value;
-      updateContent(selectedLanguage);
-  });
-</script>
-
+  <script src="javascript/translation.js"></script>
+  <script src="javascript/heroSectionTranslation.js"></script>
+  <script src="javascript/translationFooter.js"></script>
+  <script src="javascript/translationHeader.js"></script>
+  <script src="javascript/contactFormTranslation.js"></script>
+  <script src="javascript/contactInfoTranslation.js"></script>
+  <script src="javascript/midSectionTranslation.js"></script>
+  <script src="javascript/portfolioTranslation.js"></script>
+  <script src="javascript/processSectionTranslation.js"></script>
 
 
 </body>
